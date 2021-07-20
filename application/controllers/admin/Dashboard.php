@@ -21,13 +21,14 @@ class Dashboard extends My_Controller {
 
     public function __construct(){
 		parent::__construct();
+		$this->load->model('user_m');
 	}
 	
 	public function index(){
 		$this->load->helper('url');
 		
 		$recordsTotal = array(
-           // "artist" => $this->artist_m->countAll(),
+            "user" => $this->user_m->countAll(),
         );
 
 		//print_r($recordsTotal); die;

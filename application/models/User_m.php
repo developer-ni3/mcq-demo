@@ -75,4 +75,8 @@ class User_m extends CI_Model {
         }
         return false;
     }
+    public function countAll(){
+        $this->db->from($this->table);
+        return $this->db->count_all_results();
+    }
 }

@@ -51,7 +51,7 @@
 												<i class="ace-icon fa fa-user"></i>
 											</div>
 											<div class="infobox-data">
-												<span class="infobox-data-number">20</span>
+												<span class="infobox-data-number"><?= $user; ?></span>
 												<div class="infobox-content">User</div>
 											</div>
                                         </a>
